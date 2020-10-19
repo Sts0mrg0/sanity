@@ -29,7 +29,7 @@ const DropdownMenuItem = forwardRef(
       item,
       onAction,
       onClose,
-      renderItem
+      renderItem,
     }: {
       item: DropdownItem
       onAction: (i: DropdownItem) => void
@@ -130,7 +130,7 @@ function DropdownButton(props: DropdownButtonProps & ButtonProps) {
       buttonContainerClassName={styles.buttonContainer}
       buttonProps={{
         ...restProps,
-        className: styles.button
+        className: styles.button,
       }}
       className={classNames(styles.root, className)}
       menu={menu}

@@ -28,7 +28,7 @@ export default function ConfirmButton(
       buttonProps={{
         ...restProps,
         icon: TrashIcon,
-        padding: 'small'
+        padding: 'small',
       }}
       menu={
         <div className={styles.wrapper}>
