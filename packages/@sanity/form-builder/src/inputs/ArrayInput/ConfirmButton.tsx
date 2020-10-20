@@ -21,8 +21,6 @@ export default function ConfirmButton(
     if (open && buttonRef.current) buttonRef.current.focus()
   }, [open])
 
-  const handleBlur = useCallback(() => setOpen(false), [])
-
   return (
     <MenuButton
       buttonProps={{
@@ -32,14 +30,7 @@ export default function ConfirmButton(
       }}
       menu={
         <div className={styles.wrapper}>
-          <Button
-            color="danger"
-            onClick={onConfirm}
-            kind="simple"
-            padding="small"
-            onBlur={handleBlur}
-            ref={buttonRef}
-          >
+          <Button color="danger" onClick={onConfirm} kind="simple" padding="small" ref={buttonRef}>
             Confirm delete
           </Button>
         </div>
